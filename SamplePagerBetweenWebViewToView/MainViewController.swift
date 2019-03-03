@@ -33,11 +33,12 @@ class MainViewController: UIViewController, UIWebViewDelegate, WKUIDelegate, WKN
         homePage.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         pageScrollView.addSubview(homePage.view)
         
-        let gatePage =  self.storyboard?.instantiateViewController(withIdentifier: "SecondViewPageController") as! SecondViewPageController
-        gatePage.view.frame = CGRect(x: self.view.frame.width, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-        pageScrollView.addSubview(gatePage.view)
+        //when swipe, view change secondPageView
+//        let gatePage =  self.storyboard?.instantiateViewController(withIdentifier: "SecondViewPageController") as! SecondViewPageController
+//        gatePage.view.frame = CGRect(x: self.view.frame.width, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+//        pageScrollView.addSubview(gatePage.view)
         
-        pageScrollView.contentSize = CGSize(width: self.view.frame.width * 2, height: pageScrollView.frame.height)
+//        pageScrollView.contentSize = CGSize(width: self.view.frame.width * 2, height: pageScrollView.frame.height)
     }
     
     func setWebviewDelegate(homepage: UIViewController!){

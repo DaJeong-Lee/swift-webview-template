@@ -34,7 +34,7 @@ class HomePageViewController : UIViewController{
         
         self.view.addSubview(webView)
         
-        let address = "http://faith-developer.tistory.com/"
+        let address = "http://naver.com"
         let url = URL(string: address)
         let request = URLRequest(url: url!)
         
